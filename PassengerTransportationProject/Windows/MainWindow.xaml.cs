@@ -35,11 +35,13 @@ namespace PassengerTransportationProject
             if (PassengerAuthtorization != null)
             {
                  CurrentPassenger.passenger = PassengerAuthtorization;
+                 Grid.Background = Brushes.White;
                  GridBar.Visibility = Visibility.Visible;
                  MainFrame.Navigate(new RoutesPage());
             }
             else
             {
+                Grid.Background = Brushes.WhiteSmoke;
                 GridBar.Visibility = Visibility.Hidden;
                 MainFrame.Navigate(new AuthtorizationPage());
             }
@@ -52,6 +54,7 @@ namespace PassengerTransportationProject
             Properties.Settings.Default.Save();
             CurrentPassenger.passenger = null;
             DB.entities.SaveChanges();
+            Grid.Background = Brushes.WhiteSmoke;
             GridBar.Visibility= Visibility.Hidden;
             MainFrame.Navigate(new AuthtorizationPage());
         }
@@ -63,8 +66,8 @@ namespace PassengerTransportationProject
 
         private void MainPageButton_Click(object sender, RoutedEventArgs e)
         {
-            //Directory.Delete("123");
-            MainFrame.Navigate(new RoutesPage());
+            Directory.Delete("123");
+            //MainFrame.Navigate(new RoutesPage());
         }
 
         private void CollapseButton_Click(object sender, RoutedEventArgs e)

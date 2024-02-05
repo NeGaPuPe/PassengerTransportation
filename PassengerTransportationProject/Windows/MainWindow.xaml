@@ -12,7 +12,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
-        <Grid>
+        <Grid Name="Grid">
             <Button Cursor="Hand" x:Name="CollapseButton" Height="35" Width="40" VerticalAlignment="Top" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolButton}"  Margin="0 0 40 0" Click="CollapseButton_Click">
                 <materialDesign:PackIcon Kind="Minus" Foreground="Gray"/>
             </Button>
@@ -21,7 +21,7 @@
             </Button>
         </Grid>
         <Grid Grid.Row="1">
-            <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
+            <Frame Name="MainFrame" Background="WhiteSmoke" NavigationUIVisibility="Hidden"/>
         </Grid>
         <Grid x:Name="GridBar" Width="auto" VerticalAlignment="Center" Grid.Row="0">
             <DockPanel LastChildFill="False" >

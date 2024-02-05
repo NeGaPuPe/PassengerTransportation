@@ -122,6 +122,10 @@ namespace PassengerTransportationProject
                 DB.entities.SaveChanges();
 
                 MessageBox.Show("Сообщение об ошибке было отправлено в службу поддержки, ожидайте ответа.", "Сообщение", MessageBoxButton.OK, MessageBoxImage.Information);
+                if(MessageBox.Show("Вы можете поискать решение своей ошибки на нашем сайте. Посмотреть решения?","",MessageBoxButton.YesNo,MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("http://127.0.0.1:5500/pages/usererrors.html");
+                }
             }
             e.Handled = true;
         }

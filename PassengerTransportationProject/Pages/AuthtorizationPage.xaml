@@ -15,12 +15,12 @@
             <TextBox CommandManager.PreviewExecuted="TextBox_PreviewExecuted" MaxLength="49" materialDesign:TextFieldAssist.CharacterCounterVisibility="Collapsed" SelectionBrush="DodgerBlue" materialDesign:HintAssist.IsFloating="False" x:Name="LoginTextBox" Width="270" VerticalAlignment="Center" Height="50"  materialDesign:HintAssist.Hint="Логин" VerticalContentAlignment="Center" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="0 0 0 15"/>
             <PasswordBox MaxLength="49" materialDesign:TextFieldAssist.CharacterCounterVisibility="Collapsed" CommandManager.PreviewExecuted="TextBox_PreviewExecuted" SelectionBrush="DodgerBlue" materialDesign:HintAssist.IsFloating="False" x:Name="PasswordTextBox" Width="270" VerticalAlignment="Center" Height="50" materialDesign:HintAssist.Hint="Пароль" VerticalContentAlignment="Center" materialDesign:PasswordBoxAssist.Password="{Binding Password2, Mode=TwoWay}" IsEnabled="{Binding ElementName=RevealPasswordFloatingEnabled, Path=IsChecked}" Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}"/>
             <Border HorizontalAlignment="Center" Margin="0 10 0 0">
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
                     <CheckBox Name="SaveMeCheck"/>
-                    <TextBlock Text="Запомнить меня"  FontSize="14" Opacity="0.5" Margin="5 0"/>
+                    <TextBlock Text="Запомнить меня"  FontSize="14" Opacity="0.5" Margin="5 0 0 0"/>
                 </StackPanel>
             </Border>
-            <Button x:Name="EnterButton" Click="EnterButton_Click" Width="130" Height="47"  Foreground="White" Margin="0 10 0 10" Background="#279667" Content="Войти"/>
+            <Button x:Name="EnterButton" Click="EnterButton_Click" Width="130" Height="47"  Foreground="White" Background="#279667" Content="Войти"/>
         </StackPanel>
     </Grid>
 </Page>

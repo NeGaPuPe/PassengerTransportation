@@ -59,6 +59,7 @@ namespace PassengerTransportationProject.Pages
                     }
                     MainWindow mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
                     CurrentPassenger.passenger = PassengerAuthtorization;
+                    mainWindow.Grid.Background = Brushes.White;
                     mainWindow.GridBar.Visibility = Visibility.Visible;   
                     NavigationService.Navigate(new RoutesPage());
                 }
