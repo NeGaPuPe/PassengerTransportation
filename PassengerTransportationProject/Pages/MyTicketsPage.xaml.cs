@@ -57,7 +57,7 @@ namespace PassengerTransportationProject.Pages
 
         private void PrintTicket_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            using (var templateDoc = DocX.Load(@"C:\Users\rich4\Downloads\PassengerTransportationProject\PassengerTransportationProject\Resources\ШаблонБилета.docx"))
+            using (var templateDoc = DocX.Load(@"ШаблонБилета.docx"))
             {
                 MyTicket CurrentTicket = ((MyTicket)((PackIcon)sender).DataContext);
 
