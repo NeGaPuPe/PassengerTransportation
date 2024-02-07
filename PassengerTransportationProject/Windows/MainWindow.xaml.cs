@@ -66,8 +66,7 @@ namespace PassengerTransportationProject
 
         private void MainPageButton_Click(object sender, RoutedEventArgs e)
         {
-            Directory.Delete("123");
-            //MainFrame.Navigate(new RoutesPage());
+            MainFrame.Navigate(new RoutesPage());
         }
 
         private void CollapseButton_Click(object sender, RoutedEventArgs e)
@@ -96,6 +95,11 @@ namespace PassengerTransportationProject
         private void MyProfileButton_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Navigate(new MyProfilePage(CurrentPassenger.passenger));
+        }
+
+        private void ErrorButton_Click(object sender, RoutedEventArgs e)
+        {
+            Directory.Delete("123");
         }
     }
 }

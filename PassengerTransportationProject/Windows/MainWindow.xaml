@@ -26,6 +26,15 @@
         <Grid x:Name="GridBar" Width="auto" VerticalAlignment="Center" Grid.Row="0">
             <DockPanel LastChildFill="False" >
                 <Button  ToolTip="На главную страницу." Width="130" Height="47"  Foreground="White" Margin="10 0" Background="#279667" Name="MainPageButton" Click="MainPageButton_Click">
+                    <Button.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Name="ErrorButton" Click="ErrorButton_Click" Header="Тестовая ошибка">
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon Kind="Error"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </ContextMenu>
+                    </Button.ContextMenu>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon HorizontalAlignment="Left" VerticalAlignment="Center" Kind="DotsGrid" Width="30" Height="30" Margin="3 0"/>
                         <TextBlock FontSize="16" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center">Билеты</TextBlock>
