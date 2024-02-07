@@ -25,10 +25,12 @@ namespace PassengerTransportationProject.Model
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Employee> Employee { get; set; }
         public virtual DbSet<Gender> Gender { get; set; }
         public virtual DbSet<MyTicket> MyTicket { get; set; }
         public virtual DbSet<Nationality> Nationality { get; set; }
         public virtual DbSet<Passenger> Passenger { get; set; }
+        public virtual DbSet<Position> Position { get; set; }
         public virtual DbSet<Route> Route { get; set; }
         public virtual DbSet<StationDeparture> StationDeparture { get; set; }
         public virtual DbSet<StationTarget> StationTarget { get; set; }

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Практика\PassengerTransportationProject\PassengerTransportationProject\obj\Debug\
+D:\Практика\LauncherApp\LauncherApp\bin\Debug\App\PassengerTransportation-master\PassengerTransportationProject\obj\Debug\
 PassengerTransportationProject
 none
 false
 DEBUG;TRACE
-D:\Практика\PassengerTransportationProject\PassengerTransportationProject\App.xaml
+D:\Практика\LauncherApp\LauncherApp\bin\Debug\App\PassengerTransportation-master\PassengerTransportationProject\App.xaml
 6-2125765265
 2-95638413
-26-1622467860
-251527932418
+28238371657
+25-1517514765
 Pages\BuyingTicketsPage.xaml;Pages\MyProfilePage.xaml;Pages\MyTicketsPage.xaml;Pages\RoutesPage.xaml;Windows\MainWindow.xaml;Pages\AuthtorizationPage.xaml;
 
 False

@@ -117,6 +117,7 @@ namespace PassengerTransportationProject
                 task.Subject = Subject;
                 task.Priority = Priority;
                 task.Text = Body;
+                task.Status = "Активная";
                 task.DateTask = Convert.ToDateTime(Date);
                 DB.entities.Task.Add(task);
                 DB.entities.SaveChanges();

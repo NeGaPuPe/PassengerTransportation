@@ -12,17 +12,22 @@ namespace PassengerTransportationProject.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Task
+    public partial class Employee
     {
-        public int TaskID { get; set; }
-        public string Subject { get; set; }
-        public string Text { get; set; }
-        public Nullable<System.DateTime> DateTask { get; set; }
-        public string Priority { get; set; }
-        public string Comment { get; set; }
-        public string Status { get; set; }
-        public Nullable<int> EmployeeID { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Employee()
+        {
+            this.Task = new HashSet<Task>();
+        }
     
-        public virtual Employee Employee { get; set; }
+        public int EmployeeID { get; set; }
+        public string Surname { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public Nullable<int> PositionID { get; set; }
+    
+        public virtual Position Position { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Task> Task { get; set; }
     }
 }
