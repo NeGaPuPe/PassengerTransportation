@@ -9,6 +9,6 @@ namespace PassengerTransportationProject.Entities
 {
     public class DB
     {
-        public static PassengerTransportationEntities entities = new PassengerTransportationEntities();
+        public static PassengerTransportationEntities1 entities = new PassengerTransportationEntities1();
     }
 }
